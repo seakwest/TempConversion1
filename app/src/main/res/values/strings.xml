@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Farhenheit to Celsius</string>
+    <string name="farhenheit">Farhenheit</string>
+    <string name="celsiusLabel">Celsius</string>
+    <string name="celsiusTextView">0.00</string>
+    <string name="farhenheitEditText">0</string>
+
+</resources>

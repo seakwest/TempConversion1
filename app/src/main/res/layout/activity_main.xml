@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.evaristo.farhenheittocelsius.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degrees"
+        android:id="@+id/degreeLabel"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/fahrenheitEditText"
+        android:layout_alignStart="@+id/fahrenheitEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/farhenheit"
+        android:id="@+id/farhenheitLabel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/fahrenheitEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsiusLabel"
+        android:id="@+id/celsiusLabel"
+        android:layout_below="@+id/farhenheitLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fahrenheitEditText"
+        android:text="@string/farhenheitEditText"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_below="@+id/degreeLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsiusTextView"
+        android:id="@+id/celsiusTextView"
+        android:layout_alignTop="@+id/celsiusLabel"
+        android:layout_alignLeft="@+id/fahrenheitEditText"
+        android:layout_alignStart="@+id/fahrenheitEditText"
+        android:textSize="18sp" />
+
+</RelativeLayout>
